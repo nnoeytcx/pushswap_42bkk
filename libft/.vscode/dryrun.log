@@ -1,6 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/tpoungla/cadat_42bkk-1'
-make: Leaving directory `/Users/tpoungla/cadat_42bkk-1'
- 
-make: *** No targets specified and no makefile found.  Stop.
-
