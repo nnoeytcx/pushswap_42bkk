@@ -19,7 +19,7 @@
 
 int		ft_printf(const char *str, ...);
 int		ft_check(va_list args, const char c);
-size_t	ft_strlen(const char *s);
+size_t	ft_strlenpf(const char *s);
 int		ft_putnbr_id(int n);
 int		ft_putchar_c(char c);
 int		ft_percent(void);

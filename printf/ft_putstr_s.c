@@ -22,7 +22,7 @@ int	ft_putstr_s(char *s)
 		write(1, "(null)", 6);
 		return (6);
 	}
-	write(1, s, ft_strlen(s));
+	write(1, s, ft_strlenpf(s));
 	i = ft_strlen(s);
 	return (i);
 }
