@@ -14,5 +14,11 @@
 
  void main(int argc, char *argv)
  {
-
+    if (argc == 1 || (argc == 2 && ft_strlen(argv[1]) == 0))
+        return (0);
+    else if (argc == 2)
+    {
+        /* sort code */
+    }
+    
  }
