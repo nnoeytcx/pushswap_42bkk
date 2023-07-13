@@ -6,7 +6,7 @@
 /*   By: tpoungla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/04 22:37:30 by tpoungla          #+#    #+#             */
-/*   Updated: 2023/07/12 22:45:23 by tpoungla         ###   ########.fr       */
+/*   Updated: 2023/07/13 22:08:33 by tpoungla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,12 @@ int	main(int argc, char *argv[])
 {
 	char	**tab;
 	t_list	*lst;
+	int		i;
 
 	lst = NULL;
-	if (argc == 2)
+	if (argc == 1)
+		return (0);
+	else if (argc == 2)
 		tab = ft_split(argv[1], ' ');
 	else
 	{
@@ -31,6 +34,10 @@ int	main(int argc, char *argv[])
 	{
 		init_lst(tab, lst);
 	}
+	i = 0;
+	while (tab[i])
+		free(tab[i++]);
+	free(tab);
 }
 
 int	make_lst_str(t_list **lst, char *str)

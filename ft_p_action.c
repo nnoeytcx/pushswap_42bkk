@@ -6,7 +6,7 @@
 /*   By: tpoungla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 10:04:12 by tpoungla          #+#    #+#             */
-/*   Updated: 2023/07/13 00:36:44 by tpoungla         ###   ########.fr       */
+/*   Updated: 2023/07/13 22:08:22 by tpoungla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,10 +75,6 @@ void	init_lst(char **tab, t_list *lst)
 		ft_putstr_fd(ERR, 2);
 		ft_freestack(&lst);
 	}
-	i = 0;
-	while (tab[i])
-		free(tab[i++]);
-	free(tab);
 }
 
 int	check_null(int argc, char *argv[])
